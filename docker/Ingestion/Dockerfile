@@ -9,7 +9,7 @@ WORKDIR /app
 
 COPY pyproject.toml poetry.lock ./
 
-RUN poetry install --no-dev
+RUN poetry install --no-dev --only main
 
 FROM python:3.12-slim AS final
 
