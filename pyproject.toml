@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "crypto-bigdata-platform"
+version = "0.1.0"
+description = ""
+authors = ["VoDanhDay <tranleanh352004@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-binance = "^1.0.29"
+psycopg2-binary = "^2.9.10"
+sqlalchemy = "^2.0.41"
+loguru = "^0.7.3"
+pydantic-settings = "^2.9.1"
+kafka-python = "^2.2.11"
+python-dotenv = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
