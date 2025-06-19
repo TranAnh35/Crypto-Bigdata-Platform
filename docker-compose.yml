@@ -64,6 +64,20 @@ services:
     networks:
       - crypto-net
 
+  stream-layer:
+    build:
+      context: .
+      dockerfile: ./docker/Stream/Dockerfile
+    container_name: stream-layer
+    depends_on:
+      - init-kafka
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
+    networks:
+      - crypto-net
+
 networks:
   crypto-net:
     driver: bridge
